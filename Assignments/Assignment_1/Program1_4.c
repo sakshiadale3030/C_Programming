@@ -1,0 +1,61 @@
+////////////////////////////////////////////////////////////////////////////////////
+//
+//  Required Header Files
+//
+////////////////////////////////////////////////////////////////////////////////////
+
+#include<stdio.h>
+#include<stdbool.h>
+
+////////////////////////////////////////////////////////////////////////////////////
+//
+// Fuction Nmae :  Check
+// Description :   It is used to check whether the number is divisible by 5 0r not
+// Input :         Integer
+// Output :        boolean
+// Author :        Sakshi Ashok Adale
+// Date :          20/10/2025
+//
+////////////////////////////////////////////////////////////////////////////////////
+
+bool Check( int iNo)
+{
+    if((iNo % 5) == 0)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+
+}
+
+////////////////////////////////////////////////////////////////////////////////////
+//
+// Entry point Function for the application
+//
+///////////////////////////////////////////////////////////////////////////////////
+
+int main()
+{
+    int iValue = 0;
+    bool bRet = false;
+
+    printf("Enter the number :");
+    scanf("%d",&iValue);
+
+    bRet = Check(iValue);
+
+    if(bRet == true)
+    {
+        printf("Divisible by 5");
+    }
+    else
+    {
+        printf("Not Divisible by 5");
+    }
+
+
+    return 0;
+}
