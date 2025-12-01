@@ -21,7 +21,7 @@ void Accept(int iNo)
 {
    int iCnt = 0;
 
-   for(iCnt = 1; iCnt <= 5 ;iCnt++)
+   for(iCnt = 1; iCnt <= iNo ;iCnt++)
    {
       printf("*\t");
    }
@@ -44,3 +44,15 @@ int main()
 
     return 0;
 }
+
+////////////////////////////////////////////////////////////////////
+//
+// Testcases successfully handaled by the application
+//
+// Input1 : 5
+// Output : *  *  *  *  *
+//
+// Input2 : 2
+// Output : *  *
+//
+////////////////////////////////////////////////////////////////////
