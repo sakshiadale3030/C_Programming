@@ -1,0 +1,70 @@
+////////////////////////////////////////////////////////////////////
+//
+//  Required Header Files
+//
+////////////////////////////////////////////////////////////////////
+
+#include<stdio.h>
+
+////////////////////////////////////////////////////////////////////
+//
+// Fuction Nmae :  MultiplicationFactor
+// Description :   Display the Factor
+// Input :         Integer
+// Output :        Integer
+// Author :        Sakshi Ashok Adale
+// Date :          7/11/2025
+//
+////////////////////////////////////////////////////////////////////
+
+int MultiplicationFactor(int iNo)
+{
+    int iCnt = 0;
+    int iFact = 1;
+    
+    for(iCnt = 1; iCnt <= (iNo/2);iCnt++)
+    {
+       if((iNo % iCnt) == 0)
+        {
+            iFact = iFact*iCnt;
+        }
+       
+    }
+     return iFact;
+
+}
+////////////////////////////////////////////////////////////////////
+//
+// Entry point Function for the application
+//
+////////////////////////////////////////////////////////////////////
+
+int main()
+{
+    int iValue = 0,iRet = 0;
+
+    printf("Enter number : ");
+    scanf("%d",&iValue);
+
+    iRet = MultiplicationFactor(iValue);
+
+    printf("Factors are : %d/n",iRet);
+
+    return 0;
+}
+
+////////////////////////////////////////////////////////////////////
+//
+// Testcases successfully handaled by the application
+//
+// Input1 : 12
+// Output : 144
+//
+// Input2 : 13
+// Output : 1
+//
+// Input3 : 10
+// Output : 10
+//
+////////////////////////////////////////////////////////////////////
+
