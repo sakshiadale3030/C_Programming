@@ -1,0 +1,67 @@
+////////////////////////////////////////////////////////////////////
+//
+//  Required Header Files
+//
+////////////////////////////////////////////////////////////////////
+
+#include<stdio.h>
+
+////////////////////////////////////////////////////////////////////
+//
+// Fuction Nmae :  FindMaximun
+// Description :   Summation difference factor and non-factor
+// Input :         Integer
+// Output :        Integer
+// Author :        Sakshi Ashok Adale
+// Date :          7/11/2025
+//
+////////////////////////////////////////////////////////////////////
+
+int FindMaximun(int iNo1 , int iNo2)
+{
+    if(iNo1 > iNo2)
+    {
+        return iNo1;
+    }
+    else
+    {
+        return iNo2;
+    }
+
+}
+////////////////////////////////////////////////////////////////////
+//
+// Entry point Function for the application
+//
+////////////////////////////////////////////////////////////////////
+
+int main()
+{
+    int iValue1 = 0, iValue2 = 0, iRet = 0;
+
+    printf("Enter number : ");
+    scanf("%d %d",&iValue1,&iValue2);
+
+    iRet = FindMaximun(iValue1,iValue2);
+
+    printf("Maximum is : %d\n",iRet);
+
+    return 0;
+}
+
+////////////////////////////////////////////////////////////////////
+//
+// Testcases successfully handaled by the application
+//
+// Input1 : 12
+// Output : 5   7   8   9   10  11
+//
+// Input2 : 13 
+// Output : 2   3   4   5   6   7   8   9   10  11
+//
+// Input3 : 10
+// Output : 3   4   6   7   8   9
+//
+////////////////////////////////////////////////////////////////////
+
+

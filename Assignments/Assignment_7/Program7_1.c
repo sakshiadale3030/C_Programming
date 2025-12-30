@@ -1,0 +1,76 @@
+////////////////////////////////////////////////////////////////////
+//
+//  Required Header Files
+//
+////////////////////////////////////////////////////////////////////
+
+#include<stdio.h>
+
+////////////////////////////////////////////////////////////////////
+//
+// Fuction Name :  Pattern
+// Description :   Print the pattern printing
+// Input :         Integer
+// Output :        Pattern
+// Author :        Sakshi Ashok Adale
+// Date :          21/11/2025
+//
+////////////////////////////////////////////////////////////////////
+
+void Pattern(int iNo)
+{
+    int iCnt = 0;
+
+    if(iNo < 0)
+    {
+        iNo = -iNo;
+    }
+
+    for(iCnt = 1; iCnt <= iNo*2; iCnt++)
+    {
+        if((iCnt % 2) == 0)
+        {
+            printf("*\t");
+        }
+        else
+        {
+            printf("$\t");
+        }
+    }
+}
+    
+
+////////////////////////////////////////////////////////////////////
+//
+// Entry point Function for the application
+//
+////////////////////////////////////////////////////////////////////
+
+int main()
+{
+    int iValue = 0;
+
+    printf("Enter the number : ");
+    scanf("%d",&iValue);
+
+    Pattern(iValue);
+
+    return 0;
+}
+
+////////////////////////////////////////////////////////////////////
+//
+// Testcases successfully handaled by the application
+//
+// Input1 : 5
+// Output : $	*	$	*	$	*	$	*	$	*
+//
+// Input2 : 3
+// Output : $	*	$	*	$	*
+//
+// Input3 : -3
+// Output :  $	*	$	*	$	*
+//
+////////////////////////////////////////////////////////////////////
+
+

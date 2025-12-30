@@ -1,0 +1,67 @@
+////////////////////////////////////////////////////////////////////
+//
+//  Required Header Files
+//
+////////////////////////////////////////////////////////////////////
+
+#include<stdio.h>
+
+////////////////////////////////////////////////////////////////////
+//
+// Fuction Name :  ReverseTable
+// Description :   Print the Reverse Table of number
+// Input :         Integer
+// Output :        Integer
+// Author :        Sakshi Ashok Adale
+// Date :          21/11/2025
+//
+////////////////////////////////////////////////////////////////////
+
+void ReverseTable(int iNo)
+{
+    int iCnt = 0;
+
+    if(iNo < 0)
+    {
+        iNo = -iNo;
+    }
+
+    for(iCnt = 10; iCnt >= 1; iCnt--)
+    {
+        printf("%d\t",iNo * iCnt);
+    }
+    printf("\n");             
+}
+
+////////////////////////////////////////////////////////////////////
+//
+// Entry point Function for the application
+//
+////////////////////////////////////////////////////////////////////
+
+int main()
+{
+    int iValue = 0;
+    int iRet = 0;
+
+    printf("Enter the number : ");
+    scanf("%d",&iValue);
+
+    ReverseTable(iValue);
+
+    return 0;
+}
+
+////////////////////////////////////////////////////////////////////
+//
+// Testcases successfully handaled by the application
+//
+// Input1 : 3
+// Output : 30	27	24	21	18	15	12	9	6	3
+//
+// Input2 : -5
+// Output : 50	45	40	35	30	25	20	15	10	5
+//
+////////////////////////////////////////////////////////////////////
+
+

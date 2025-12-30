@@ -1,0 +1,38 @@
+////////////////////////////////////////////////////////////////////
+//
+//  Required Header Files
+//
+////////////////////////////////////////////////////////////////////
+
+#include<stdio.h>
+
+////////////////////////////////////////////////////////////////////
+//
+// Entry point Function for the application
+//
+////////////////////////////////////////////////////////////////////
+
+int main()
+{
+    char cName[30];
+
+    printf("Enter the full name : ");
+    fgets(cName , 30 , stdin);
+
+    printf("Your name is : %s",cName);
+
+    return 0;
+}
+
+////////////////////////////////////////////////////////////////////
+//
+// Testcases successfully handaled by the application
+//
+// Input1 : 12      Input2 : 0      Input : 2     Output : 24
+// Input1 : 5       Input2 : 4      Input : 7     Output : 140
+// Input1 : 5       Input2 : 0      Input : 7      Output : 35
+// Input1 : 5       Input2 : 0      Input : 0      Output : 5
+// Input1 : 0       Input2 : 0      Input : 0      Output : 0
+//
+////////////////////////////////////////////////////////////////////
+
