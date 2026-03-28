@@ -1,0 +1,74 @@
+////////////////////////////////////////////////////////////////////
+//
+//  Required Header Files
+//
+////////////////////////////////////////////////////////////////////
+
+#include<stdio.h>
+
+////////////////////////////////////////////////////////////////////
+//
+// Fuction Name :  Display
+// Description :   Display the pattern
+// Input :         Integer
+// Output :        Integer
+// Author :        Sakshi Ashok Adale
+// Date :          21/11/2025
+//
+////////////////////////////////////////////////////////////////////
+
+void Display(int iNo)
+{
+    int iCnt = 0;
+
+    if(iNo < 0)
+    {
+        iNo = -iNo;
+    }
+
+    for(iCnt = 1; iCnt <= iNo; iCnt++)
+    {
+        printf("*\t");
+    }
+    for(iCnt = 1; iCnt <= iNo; iCnt++)
+    {
+        printf("#\t");
+    } 
+    printf("\n");          
+}
+
+////////////////////////////////////////////////////////////////////
+//
+// Entry point Function for the application
+//
+////////////////////////////////////////////////////////////////////
+
+int main()
+{
+    int iValue = 0;
+    int iRet = 0;
+
+    printf("Enter the number : ");
+    scanf("%d",&iValue);
+
+    Display(iValue);
+
+    return 0;
+}
+
+////////////////////////////////////////////////////////////////////
+//
+// Testcases successfully handaled by the application
+//
+// Input1 : 5
+// Output : *	*	*	*	*	#	#	#	#	#
+//
+// Input2 : -4
+// Output : *	*	*	*	#	#	#	#
+//
+// Input3 : 3
+// Output : *	*	*	#	#	#
+//
+////////////////////////////////////////////////////////////////////
+
+
